@@ -14,10 +14,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # Expone el puerto 2016
-EXPOSE 2016
+EXPOSE 2018
 
 # Comando para ejecutar la aplicación Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:2016"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:2018"]
 
 
 
