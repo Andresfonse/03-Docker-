@@ -17,7 +17,7 @@ COPY . /app
 EXPOSE 2018
 
 # Comando para ejecutar la aplicación Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:2018"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5445", "03-Docker-.wsgi:application"]
 
 
 
