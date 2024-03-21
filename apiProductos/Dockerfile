@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # Expone el puerto 2016
-EXPOSE 2018
+EXPOSE 5445
 
 # Comando para ejecutar la aplicación Django
 CMD ["gunicorn", "--bind", "0.0.0.0:5445", "apiProductos.wsgi:application"]
